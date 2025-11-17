@@ -2,23 +2,27 @@
 
 <h2>Objective:</h2>
 
-<h4>Set up a CI/CD pipeline that automatically builds and deploys a Node.js application using GitHub Actions and Docker.</h4>
+Set up a CI/CD pipeline that automatically <h4>builds and deploys a Node.js application</h4> using <h4>GitHub Actions and Docker.</h4>
 
 <h1>🚀 What You Need</h1>
 
 * A GitHub repository
 
-A Node.js application (simple Express app is fine)
+* A Node.js application (simple Express app is fine)
 
-Docker installed (for local testing)
+* Docker installed (for local testing)
 
-GitHub Actions (no setup required, built into GitHub)
+* GitHub Actions (no setup required, built into GitHub)
 
 <h1>📁 Deliverable</h1>
 
 Your GitHub repo must contain:
+```
+md
 
 .github/workflows/deploy.yml
+
+```
 
 <h1>🔧 Step-by-Step Implementation</h1>
 <h2>1️⃣ Create Project Structure</h2>
@@ -34,7 +38,7 @@ Inside your project folder:
  │       └── deploy.yml
 ```
 <h2>2️⃣ Sample Node.js App</h2>
-
+```
 index.js
 
 const express = require("express");
@@ -62,11 +66,13 @@ package.json
     "express": "^4.18.2"
   }
 }
+```
 
 <h2>3️⃣ Create Dockerfile</h2>
 
 Dockerfile
 
+```
 FROM node:18-alpine
 
 WORKDIR /app
@@ -79,16 +85,19 @@ COPY . .
 EXPOSE 3000
 
 CMD ["npm", "start"]
+```
 
 <h2>4️⃣ Create GitHub Actions Workflow</h2>
 
 Create folder + file:
-
+```
+bash
 .github/workflows/deploy.yml
-
+```
 
 Paste this:
 
+```
 name: CI/CD Pipeline
 
 on:
@@ -123,17 +132,18 @@ jobs:
           name: docker-image
           path: |
             **/Dockerfile
-
+```
 
 
 <h1>🎯 Final Output</h1>
 
 Your repo should contain:
 
+```
 /.github/workflows/deploy.yml
 Dockerfile
 package.json
 index.js
-
+```
 
 Push code → GitHub Actions automatically runs CI/CD.</h3>

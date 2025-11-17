@@ -24,7 +24,7 @@ Your GitHub repo must contain:
 <h2>1️⃣ Create Project Structure</h2>
 
 Inside your project folder:
-
+```
 /my-node-app
  ├── Dockerfile
  ├── package.json
@@ -32,7 +32,7 @@ Inside your project folder:
  ├── .github/
  │   └── workflows/
  │       └── deploy.yml
-
+```
 <h2>2️⃣ Sample Node.js App</h2>
 
 index.js

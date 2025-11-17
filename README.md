@@ -21,7 +21,7 @@ Your GitHub repo must contain:
 .github/workflows/deploy.yml
 
 <h1>🔧 Step-by-Step Implementation</h1>
-1️⃣ Create Project Structure
+<h2>1️⃣ Create Project Structure</h2>
 
 Inside your project folder:
 
@@ -33,7 +33,7 @@ Inside your project folder:
  │   └── workflows/
  │       └── deploy.yml
 
-2️⃣ Sample Node.js App
+<h2>2️⃣ Sample Node.js App</h2>
 
 index.js
 
@@ -63,7 +63,7 @@ package.json
   }
 }
 
-3️⃣ Create Dockerfile
+<h2>3️⃣ Create Dockerfile</h2>
 
 Dockerfile
 
@@ -80,7 +80,7 @@ EXPOSE 3000
 
 CMD ["npm", "start"]
 
-4️⃣ Create GitHub Actions Workflow
+<h2>4️⃣ Create GitHub Actions Workflow</h2>
 
 Create folder + file:
 

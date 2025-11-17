@@ -1,6 +1,6 @@
 <h1>✅ TASK 1: Automate Code Deployment Using CI/CD Pipeline (GitHub Actions) </h1>
 
-Objective:
+<h2>Objective:</h2>
 
 Set up a CI/CD pipeline that automatically builds and deploys a Node.js application using GitHub Actions and Docker.
 

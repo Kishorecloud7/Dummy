@@ -16,9 +16,9 @@ Set up a CI/CD pipeline that automatically <h4>builds and deploys a Node.js appl
 
 <h1>📁 Deliverable</h1>
 
-Your GitHub repo must contain:
+<h3>Your GitHub repo must contain:</h3>
 ```
-md
+bash
 
 .github/workflows/deploy.yml
 
@@ -27,7 +27,8 @@ md
 <h1>🔧 Step-by-Step Implementation</h1>
 <h2>1️⃣ Create Project Structure</h2>
 
-Inside your project folder:
+<h3>Inside your project folder:</h3>
+
 ```
 /my-node-app
  ├── Dockerfile
@@ -36,12 +37,14 @@ Inside your project folder:
  ├── .github/
  │   └── workflows/
  │       └── deploy.yml
+
 ```
+
 <h2>2️⃣ Sample Node.js App</h2>
 
-```
-index.js
+<h3>index.js</h3>
 
+```
 const express = require("express");
 const app = express();
 const port = 3000;
@@ -53,10 +56,11 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
 });
+
 ```
 
 
-package.json
+<h3>package.json</h3>
 
 ```
 {
@@ -74,7 +78,7 @@ package.json
 
 <h2>3️⃣ Create Dockerfile</h2>
 
-Dockerfile
+<h3>Dockerfile</h3>
 
 ```
 FROM node:18-alpine
@@ -94,14 +98,15 @@ CMD ["npm", "start"]
 
 <h2>4️⃣ Create GitHub Actions Workflow</h2>
 
-Create folder + file:
+<h3>Create folder + file:</h3>
+
 ```
 bash
 .github/workflows/deploy.yml
 
 ```
 
-Paste this:
+<h3>Paste this:</h3>
 
 ```
 name: CI/CD Pipeline
@@ -144,7 +149,7 @@ jobs:
 
 <h1>🎯 Final Output</h1>
 
-Your repo should contain:
+<h3>Your repo should contain:</h3>
 
 ```
 /.github/workflows/deploy.yml
@@ -154,4 +159,4 @@ index.js
 
 ```
 
-Push code → GitHub Actions automatically runs CI/CD.</h3>
+<h3>Push code → GitHub Actions automatically runs CI/CD.</h3>
